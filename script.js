@@ -99,7 +99,7 @@ document.querySelector('#orderForm')?.addEventListener('submit',e=>{
  let total=0;
  const lines=cart.map(x=>{total+=x.price*x.qty;return `• ${x.name} × ${x.qty} = ${rupee(x.price*x.qty)}`}).join('\n');
  const msg=`Hello J-S Spice Garden Restaurant,\n\nNew ${type} order from website:\n\n${lines}\n\nTotal: ${rupee(total)}\n\nCustomer: ${name}\nPhone: ${phone}\nAddress: ${type==='Delivery'?address:'Pickup from restaurant'}\n\nPlease confirm the order and final delivery/payment details.`;
- window.open('https://wa.me/918522889977?text='+encodeURIComponent(msg),'_blank');
+ window.open('https://wa.me/918247550294?text='+encodeURIComponent(msg),'_blank');
 });
 
 bindAddButtons();
